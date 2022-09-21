@@ -13,7 +13,7 @@ public class LerArquivoTxt {
 		
 		
 		FileInputStream entradaArquivo = new FileInputStream
-				(new File("C:\\workspace-curso-java\\arquivos\\src\\arquivos\\arquivo.txt"));
+				(new File("C:\\workspace-curso-java\\arquivos\\src\\arquivos\\arquivo.csv"));
 		Scanner LerArquivo = new Scanner(entradaArquivo, "UTF-8");
 		
 		List<pessoa> pessoas = new ArrayList<pessoa>();
@@ -24,7 +24,7 @@ public class LerArquivoTxt {
 			
 			if (linha !=null && !linha.isEmpty()) {
 			
-			String [] dados = linha.split("\\|");
+			String [] dados = linha.split("\\;");
 			
 			pessoa Pessoa = new pessoa();
 			Pessoa.setNome(dados[0]);
