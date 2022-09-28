@@ -10,8 +10,7 @@ import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 
-public class ApachePoi {
-	
+public class ApachePoiok {
 	
 	public static void main(String[] args) throws Exception {
 		
@@ -69,12 +68,15 @@ public class ApachePoi {
 		} /*termino da planilha*/
 		
 		FileOutputStream saida = new FileOutputStream(file);
-		hssfWorkbook.write(saida); /*escreve a planilha em arquivo*/
+		hssfWorkbook.write(saida);
 		saida.flush();
 		saida.close();
 		
+		
 		System.out.println("planilha foi criada");
+		
 	
 	}
+
 
 }
