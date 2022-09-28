@@ -45,8 +45,10 @@ public class ApachePoiok {
 		pessoas.add(pessoa2);
 		pessoas.add(pessoa3);
 		
-		HSSFWorkbook hssfWorkbook = new HSSFWorkbook();/*vai ser usado p escrever a planilha*/
+		HSSFWorkbook hssfWorkbook = new HSSFWorkbook();
 		HSSFSheet linhaPessoas = hssfWorkbook.createSheet("Planilha de pessoas Treinamento"); /*cria a planilha*/
+	
+				
 		
 		int numeroLinha = 0; 
 		
