@@ -10,26 +10,26 @@ public class arquivos {
 	
 	public static void main(String[] args) throws IOException   {
 		
-		pessoa pessoa1 = new pessoa();
+		Pessoa pessoa1 = new Pessoa();
 		pessoa1.setEmail("pessoa1@gmail.com");
 		pessoa1.setIdade(45);
 		pessoa1.setNome("João");
 		
 		
-		pessoa pessoa2 = new pessoa();
+		Pessoa pessoa2 = new Pessoa();
 		pessoa2.setEmail("pessoa2@gmail.com");
 		pessoa2.setIdade(47);
 		pessoa2.setNome("Joaquim");
 		
 		
-		pessoa pessoa3 = new pessoa();
+		Pessoa pessoa3 = new Pessoa();
 		pessoa3.setEmail("pessoa3@gmail.com");
 		pessoa3.setIdade(49);
 		pessoa3.setNome("José");
 		
 		//*essa lista pode vir do banco de dados ou qlq fonte de dados*//
 		
-		List<pessoa> pessoas = new ArrayList<pessoa>();
+		List<Pessoa> pessoas = new ArrayList<Pessoa>();
 		pessoas.add(pessoa1);
 		pessoas.add(pessoa2);
 		pessoas.add(pessoa3);
@@ -48,7 +48,7 @@ public class arquivos {
 
 		
 		
-		for (pessoa p : pessoas) {
+		for (Pessoa p : pessoas) {
 			
 			escrever_no_arquivo.write(p.getNome() + ";" + p.getEmail() + ";" + p.getIdade() + "\n");
 			

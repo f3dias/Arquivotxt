@@ -16,7 +16,7 @@ public class LerArquivoTxt {
 				(new File("C:\\workspace-curso-java\\arquivos\\src\\arquivos\\arquivo.csv"));
 		Scanner LerArquivo = new Scanner(entradaArquivo, "UTF-8");
 		
-		List<pessoa> pessoas = new ArrayList<pessoa>();
+		List<Pessoa> pessoas = new ArrayList<Pessoa>();
 		
 		while (LerArquivo.hasNext()) {
 			
@@ -26,19 +26,19 @@ public class LerArquivoTxt {
 			
 			String [] dados = linha.split("\\;");
 			
-			pessoa Pessoa = new pessoa();
-			Pessoa.setNome(dados[0]);
-			Pessoa.setEmail(dados[1]);
-			Pessoa.setIdade(Integer.parseInt(dados[2]));
+			Pessoa pessoa = new Pessoa();
+			pessoa.setNome(dados[0]);
+			pessoa.setEmail(dados[1]);
+			pessoa.setIdade(Integer.parseInt(dados[2]));
 			
-			pessoas.add(Pessoa);
+			pessoas.add(pessoa);
 			
 			}
 		}
 		
-		for (pessoa Pessoa : pessoas) { //*poderia gravar no banco de dados, gerar boleto etc...*//
+		for (Pessoa pessoa : pessoas) { //*poderia gravar no banco de dados, gerar boleto etc...*//
 			
-			System.out.println(Pessoa);
+			System.out.println(pessoa);
 			
 		}
 	}

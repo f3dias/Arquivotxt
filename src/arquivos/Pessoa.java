@@ -1,6 +1,6 @@
 package arquivos;
 
-public class pessoa {
+public class Pessoa {
 	
 	private String nome;
 	
